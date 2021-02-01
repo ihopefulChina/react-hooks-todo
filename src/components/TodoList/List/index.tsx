@@ -2,8 +2,11 @@ import React, { FC, ReactElement } from "react";
 import { ITodo } from "../typings";
 import TdItem from "./Item";
 interface IPops {
+  //列表
   todoList: ITodo[];
+  //删除
   removeTodo: (id: number) => void;
+  //input checkBox
   toggleTodo: (id: number) => void;
 }
 

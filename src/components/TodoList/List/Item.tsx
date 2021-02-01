@@ -2,9 +2,12 @@ import React, { FC, ReactElement } from "react";
 import { ITodo } from "../typings";
 
 interface IProps {
+  //当前item
   todo: ITodo;
-  toggleTodo: (id: number) => void;
+  //删除
   removeTodo: (id: number) => void;
+  //input checkBox
+  toggleTodo: (id: number) => void;
 }
 
 const TdItem: FC<IProps> = ({ todo, removeTodo, toggleTodo }): ReactElement => {
